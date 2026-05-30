@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>电影分类-电影排行榜精选片单</title>
+  <meta name="description" content="电影排行榜页面按热度、口碑和题材整理影片内容，涵盖多地区电影，榜单信息持续维护。">
+  <meta name="keywords" content="电影排行榜,高分电影,热门电影,精选内容,电影榜单,口碑影片,电影片单,电影分类,精选片单">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-logo" href="./index.html" aria-label="电影排行榜">
+      <span class="site-logo__mark">影</span>
+      <span class="site-logo__text">
+        <strong>电影排行榜</strong>
+        <small>高分电影 · 精选榜单</small>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link active" href="./categories.html">分类</a>
+      <a class="nav-link" href="./ranking.html">排行榜</a>
+      <a class="nav-link" href="./search.html">搜索</a>
+      <a class="nav-link" href="./sitemap.html">影片索引</a>
+      <div class="nav-drop">
+        <button type="button" class="nav-link nav-drop__button">片单</button>
+        <div class="nav-drop__menu">
+          <a href="./category-hot-movies.html">热门电影</a><a href="./category-high-score.html">高分推荐</a><a href="./category-word-of-mouth.html">口碑影片</a><a href="./category-selected-list.html">精选片单</a><a href="./category-new-watch.html">新片推荐</a><a href="./category-classic-list.html">经典回看</a><a href="./category-region-mix.html">多地区电影</a><a href="./category-genre-mix.html">多类型精选</a>
+        </div>
+      </div>
+    </nav>
+    <form class="header-search js-search-form" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片、地区、题材" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <button type="button" class="mobile-toggle js-mobile-toggle" aria-label="打开导航">☰</button>
+  </div>
+  <div class="mobile-panel js-mobile-panel">
+    <form class="mobile-search js-search-form" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片、地区、题材" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <nav aria-label="移动端导航">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link active" href="./categories.html">分类</a>
+      <a class="nav-link" href="./ranking.html">排行榜</a>
+      <a class="nav-link" href="./search.html">搜索</a>
+      <a class="nav-link" href="./sitemap.html">影片索引</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="container">
+  <div class="page-title">
+    <nav class="breadcrumb"><a href="./index.html">首页</a><span>/</span><span>分类</span></nav>
+    <h1>电影分类与精选片单</h1>
+    <p>电影排行榜页面按热度、口碑和题材整理影片内容，涵盖多地区电影，榜单信息持续维护。</p>
+  </div>
+  <div class="category-grid" style="margin-top: 28px;">
+    <article class="category-tile">
+  <div>
+    <span>电影片单</span>
+    <h2>热门电影</h2>
+    <p>围绕热度与讨论度整理的影片片单，适合快速发现近期值得观看的内容。</p>
+  </div>
+  <div class="category-samples"><a href="./movie-28.html">禁入校园</a><a href="./movie-51.html">怒发冲冠为红颜</a><a href="./movie-53.html">小可爱娜斯佳第六季</a></div>
+  <a class="hero-link-soft" href="./category-hot-movies.html">浏览片单</a>
+</article>
+    <article class="category-tile">
+  <div>
+    <span>电影片单</span>
+    <h2>高分推荐</h2>
+    <p>聚合口碑表现突出的影视内容，涵盖剧情、动作、喜剧、悬疑等多种类型。</p>
+  </div>
+  <div class="category-samples"><a href="./movie-7.html">艾拉‧辛德斯</a><a href="./movie-14.html">神话任务第四季</a><a href="./movie-58.html">瑶山大剿匪</a></div>
+  <a class="hero-link-soft" href="./category-high-score.html">浏览片单</a>
+</article>
+    <article class="category-tile">
+  <div>
+    <span>电影片单</span>
+    <h2>口碑影片</h2>
+    <p>从观众评价与内容完成度出发，收录适合细细观看的电影与剧集。</p>
+  </div>
+  <div class="category-samples"><a href="./movie-4.html">快乐大本营2009</a><a href="./movie-8.html">怪猫菲力兹</a><a href="./movie-12.html">大野龙虎狗</a></div>
+  <a class="hero-link-soft" href="./category-word-of-mouth.html">浏览片单</a>
+</article>
+    <article class="category-tile">
+  <div>
+    <span>电影片单</span>
+    <h2>精选片单</h2>
+    <p>多地区、多题材内容持续更新，帮助观众按片单发现更多作品。</p>
+  </div>
+  <div class="category-samples"><a href="./movie-24.html">迷茫的一代</a><a href="./movie-36.html">婚前经验</a><a href="./movie-41.html">大剑客查禄</a></div>
+  <a class="hero-link-soft" href="./category-selected-list.html">浏览片单</a>
+</article>
+    <article class="category-tile">
+  <div>
+    <span>电影片单</span>
+    <h2>新片推荐</h2>
+    <p>整理年份较新的影视条目，适合关注近期电影与剧集动态的观众。</p>
+  </div>
+  <div class="category-samples"><a href="./movie-1.html">大展猴威3：宝贝智多猩</a><a href="./movie-13.html">我唯一的拥护者</a><a href="./movie-17.html">欲念浮动</a></div>
+  <a class="hero-link-soft" href="./category-new-watch.html">浏览片单</a>
+</article>
+    <article class="category-tile">
+  <div>
+    <span>电影片单</span>
+    <h2>经典回看</h2>
+    <p>把经典气质与耐看度放在首位，适合重温与补片。</p>
+  </div>
+  <div class="category-samples"><a href="./movie-2.html">砖匠</a><a href="./movie-11.html">超级少女第二季</a><a href="./movie-18.html">空虚的闪耀</a></div>
+  <a class="hero-link-soft" href="./category-classic-list.html">浏览片单</a>
+</article>
+    <article class="category-tile">
+  <div>
+    <span>电影片单</span>
+    <h2>多地区电影</h2>
+    <p>覆盖华语、欧美、日韩及其他地区影片，便于跨地区浏览。</p>
+  </div>
+  <div class="category-samples"><a href="./movie-5.html">闪电狗</a><a href="./movie-15.html">劳务师卢武镇</a><a href="./movie-34.html">哈儿传奇</a></div>
+  <a class="hero-link-soft" href="./category-region-mix.html">浏览片单</a>
+</article>
+    <article class="category-tile">
+  <div>
+    <span>电影片单</span>
+    <h2>多类型精选</h2>
+    <p>综合剧情、喜剧、动作、动画、犯罪、悬疑等题材内容。</p>
+  </div>
+  <div class="category-samples"><a href="./movie-16.html">最后的七个</a><a href="./movie-43.html">超级青春期</a><a href="./movie-56.html">父亲大人</a></div>
+  <a class="hero-link-soft" href="./category-genre-mix.html">浏览片单</a>
+</article>
+    <article class="category-tile">
+  <div>
+    <span>电影片单</span>
+    <h2>家庭观影</h2>
+    <p>适合多人一起观看的轻松、温暖与冒险题材影视片单。</p>
+  </div>
+  <div class="category-samples"><a href="./movie-3.html">杜宾巡官：白色毒药</a><a href="./movie-6.html">狗蛋大兵</a><a href="./movie-31.html">雀斑公主</a></div>
+  <a class="hero-link-soft" href="./category-family-night.html">浏览片单</a>
+</article>
+    <article class="category-tile">
+  <div>
+    <span>电影片单</span>
+    <h2>悬疑片单</h2>
+    <p>关注推理、犯罪、谍战与紧张叙事氛围，带来更强情节吸引力。</p>
+  </div>
+  <div class="category-samples"><a href="./movie-9.html">冰冻浩劫</a><a href="./movie-20.html">无法避免的战争</a><a href="./movie-22.html">养鬼吃人4：猛鬼磁场</a></div>
+  <a class="hero-link-soft" href="./category-suspense-list.html">浏览片单</a>
+</article>
+    <article class="category-tile">
+  <div>
+    <span>电影片单</span>
+    <h2>剧情佳作</h2>
+    <p>以人物、情感和社会议题为核心，收录叙事完整的剧情向作品。</p>
+  </div>
+  <div class="category-samples"><a href="./movie-19.html">罪恶黑名单第六季</a><a href="./movie-37.html">解放5：最后一击</a><a href="./movie-38.html">天下第一</a></div>
+  <a class="hero-link-soft" href="./category-drama-list.html">浏览片单</a>
+</article>
+    <article class="category-tile">
+  <div>
+    <span>电影片单</span>
+    <h2>连续追看</h2>
+    <p>适合持续浏览与追看的影视内容，兼顾剧集、综艺与长线故事。</p>
+  </div>
+  <div class="category-samples"><a href="./movie-10.html">逆水寒</a><a href="./movie-23.html">探清水河：重生</a><a href="./movie-26.html">美味、爱情、甜蜜蜜</a></div>
+  <a class="hero-link-soft" href="./category-binge-watch.html">浏览片单</a>
+</article>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <span class="site-logo__mark">影</span>
+        <div>
+          <strong>电影排行榜</strong>
+          <small>高分电影 · 精选榜单</small>
+        </div>
+      </div>
+      <p>电影排行榜页面按热度、口碑和题材整理影片内容，涵盖多地区电影，榜单信息持续维护。</p>
+    </div>
+    <div>
+      <h3>快速导航</h3>
+      <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./ranking.html">排行榜</a></li>
+        <li><a href="./categories.html">分类</a></li>
+        <li><a href="./sitemap.html">影片索引</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>精选片单</h3>
+      <ul>
+        <li><a href="./category-hot-movies.html">热门电影</a></li><li><a href="./category-high-score.html">高分推荐</a></li><li><a href="./category-word-of-mouth.html">口碑影片</a></li><li><a href="./category-selected-list.html">精选片单</a></li><li><a href="./category-new-watch.html">新片推荐</a></li><li><a href="./category-classic-list.html">经典回看</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>站内浏览</h3>
+      <p>按热度、口碑、地区和题材浏览电影榜单，精选内容持续更新。</p>
+    </div>
+  </div>
+  <div class="site-footer__bottom">
+    <span>© 2026 电影排行榜</span>
+    <span>高分电影排行榜 · 精选内容持续更新</span>
+  </div>
+</footer>
+<script src="./assets/app.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
